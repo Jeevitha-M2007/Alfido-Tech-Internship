@@ -1,0 +1,30 @@
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+print("Select operation")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = int(input("Enter your choice (1-4): "))
+
+if choice == 1:
+    Result = a + b
+
+elif choice == 2:
+    Result = a - b
+
+elif choice == 3:
+    Result = a * b
+
+elif choice == 4:
+    if b != 0:
+        Result = a / b
+    else:
+        print("Division by zero is not allowed")
+        exit()
+else:
+    print("Invalid choice")
+    exit()
+print("Result=" ,Result)
